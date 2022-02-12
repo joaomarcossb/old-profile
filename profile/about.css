@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color1: #FFDDAD;
+    --color2: #FA9633;
+    --color3: #E06D34;
+    --color4: #892E33;
+    --titleFont: 'Bebas Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://i.pinimg.com/originals/a1/78/55/a1785592d41e140f00ef1cf3d9597dcb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 90vw;
+}
+
+h1 {
+    font-family: var(--titleFont);
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-family: system-ui, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: .5px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.teclist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    font-family: system-ui, sans-serif;
+    color: #fff;
+    text-align: left;
+    margin: 0px 40px;
+}

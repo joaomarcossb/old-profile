@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        <span>Portifólio</span>
+        <h1>João Marcos Santana Brandão</h1>
+        <ul>
+            <li>Software Engineer</li>
+            <span>|</span>
+            <li>Front-End Developer</li>
+        </ul>
+        <div class="plus-container">
+            <button id="plus-btn" class="plus-btn" onclick="dropDown()">Saiba Mais <i class="bi bi-chevron-down"></i></button>
+            <div class="pluslist-holder">
+                <div id="plus-list" class="plus-list" style="opacity: 0; visibility: hidden;">
+                    <ul>
+                        <li><a href="./projects/stage.html" target="_blank">Projetos <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        <li><a href="./profile/about.html" target="_blank">Perfil <i class="bi bi-box-arrow-up-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a class="links" href="https://www.github.com/joaomarcossb" target="_blank"><i class="bi bi-github"></i></a></li>
+            <li><a class="links" href="www.linkedin.com/in/joaomarcossb" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            <li><i id="wapp-clip" class="clipboard bi bi-whatsapp" onclick="getWhatsApp()" onmouseenter="wappIn()" onmouseleave="wappOut()"></i></li>
+            <li><i id="email-clip" class="clipboard bi bi-envelope-fill" onclick="getEmail()" onmouseenter="emailIn()" onmouseleave="emailOut()"></i></li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

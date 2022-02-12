@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root {
+    --color1: #FFDDAD;
+    --color2: #FA9633;
+    --color3: #E06D34;
+    --color4: #892E33;
+    --titleFont: 'Bebas Neue', sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--color1);
+    overflow-x: hidden;
+    background-image: url("https://i.pinimg.com/originals/a1/78/55/a1785592d41e140f00ef1cf3d9597dcb.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(80%);
+}
+
+header {
+    height: 15vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+header > h1 {
+    font-family: var(--titleFont);
+    font-size: 2rem;
+    letter-spacing: 15px;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 490px;
+    padding: 20px 0px;
+    margin: 0px 20px 20px 0px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cards > h2 {
+    font-family: var(--titleFont);
+    letter-spacing: 5px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cards > a {
+    opacity: .7;
+}
+
+.cards > a:hover {
+    opacity: .9;
+}
