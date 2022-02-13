@@ -90,11 +90,10 @@ main > ul > li {
     border-color: #fff;
     color: #fff;
     transition: border-color .3s;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .plus-btn:hover {
-    border-color: var(--color2);
+    opacity: 0.8;
 }
 
 .pluslist-holder {
@@ -109,7 +108,7 @@ main > ul > li {
     letter-spacing: 2px;
     text-align: center;
     position: relative;
-    bottom: 70px;
+    bottom: 65px;
     border-style: solid;
     border-color: var(--color2);
     border-width: 0px 2px 2px 2px;
@@ -117,7 +116,6 @@ main > ul > li {
     transition-property: ease-in-out bottom top;
     transition-duration: .4s;
     padding: 5px 0px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .plus-list > ul {
@@ -145,6 +143,10 @@ main > ul > li {
     justify-content: space-around;
     color: #fff;
     font-size: 2.5rem;
+    position: relative;
+    bottom: 45px;
+    transition-property: ease-in-out bottom top;
+    transition-duration: .4s;
 }
 
 .links {
@@ -163,5 +165,8 @@ main > ul > li {
 @media (max-width: 450px) {
     h1 {
         font-size: 2.5rem;
+    }
+    .plus-list > ul > li > a {
+        color: #fff;
     }
 }
