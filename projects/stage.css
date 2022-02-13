@@ -74,7 +74,7 @@ main {
     opacity: .9;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 445px) {
     header {
         width: 100vw;
         margin-bottom: 10px;
