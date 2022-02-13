@@ -17,7 +17,6 @@
 body {
     width: 100vw;
     background-color: var(--color1);
-    overflow-x: hidden;
     background-image: url("https://i.pinimg.com/originals/a1/78/55/a1785592d41e140f00ef1cf3d9597dcb.png");
     background-size: cover;
     background-position: center;
@@ -35,7 +34,7 @@ header {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-header > h1 {
+h1 {
     font-family: var(--titleFont);
     font-size: 2rem;
     letter-spacing: 15px;
@@ -72,4 +71,21 @@ main {
 
 .cards > a:hover {
     opacity: .9;
+}
+
+@media (max-width: 450px) {
+    header {
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    h1 {
+        letter-spacing: 5px;
+    }
+    .cards {
+        width: 350px;
+        margin: 10px 0px;
+    }
+    .cards > a > img {
+        width: 350px;
+    }
 }
