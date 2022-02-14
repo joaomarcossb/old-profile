@@ -149,12 +149,12 @@ main > ul > li {
     transition-duration: .4s;
 }
 
-.links {
+.link {
     text-decoration: none;
     color: white;
 }
 
-.links:hover {
+.link:hover {
     color: var(--color2);
 }
 
