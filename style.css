@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -10,43 +11,48 @@
     --color2: #FA9633;
     --color3: #E06D34;
     --color4: #892E33;
-    --titleFont: 'Bebas Neue', sans-serif;
+    --titleFont: 'Bebas Neue', system-ui, sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    background-color: var(--color1);
     background-image: url("https://i.pinimg.com/originals/a1/78/55/a1785592d41e140f00ef1cf3d9597dcb.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: brightness(60%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 main {
+    padding: 80px 0px;
+    width: 95%;
+    max-width: 1000px;
     text-align: center;
+    background-color: rgb(0,0,0,0.4);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.5);
 }
 
 main > span {
     text-transform: uppercase;
-    font-family: 'Bebas Neue';
-    font-size: 1.5rem;
+    font-family: var(--titleFont);
+    font-size: 1.2rem;
     letter-spacing: 5px;
     color: var(--color2);
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     color: #fff;
     font-family: var(--titleFont);
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 5px;
-    margin: 20px 0px;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
 }
 
 main > ul {
@@ -56,13 +62,13 @@ main > ul {
     justify-content: center;
     color: var(--color2);
     letter-spacing: 3px;
-    font-family: 'Bebas Neue';
-    font-size: 1.5rem;
+    font-family: var(--titleFont);
+    font-size: 1.2rem;
+    margin: 0px 20px;
 }
 
 main > ul > li {
     margin-right: 5px;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .plus-container {
@@ -80,7 +86,7 @@ main > ul > li {
     border-radius: 3px;
     padding: 10px 0px;
     width: 140px;
-    font-family: sans-serif;
+    font-family: system-ui, sans-serif;
     font-weight: bold;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -101,8 +107,8 @@ main > ul > li {
 }
 
 .plus-list {
-    width: 136px;
-    font-family: sans-serif;
+    width: 140px;
+    font-family: system-ui, sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -114,7 +120,7 @@ main > ul > li {
     border-width: 0px 2px 2px 2px;
     border-radius: 0px 0px 3px 3px;
     transition-property: ease-in-out bottom top;
-    transition-duration: .4s;
+    transition-duration: 0.4s;
     padding: 5px 0px;
 }
 

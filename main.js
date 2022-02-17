@@ -6,12 +6,12 @@ const dropDown = () => {
     if (plusList.style.visibility == 'hidden') {
         plusList.style.visibility = 'visible';
         plusList.style.opacity = 1;
-        plusList.style.bottom = '5px';
+        plusList.style.bottom = '8px';
         plusBtn.style.borderColor = '#FA9633';
         plusBtn.style.borderBottomColor = 'rgb(0,0,0,0)';
-        plusBtn.style.borderBottomWidth = '0px';
         plusBtn.style.borderRadius = '3px 3px 0px 0px';
-        plusBtn.style.marginTop = '2px';
+        plusBtn.style.borderBottomWidth = '0px';
+        plusBtn.style.paddingBottom = '12px';
         links.style.bottom = '0px';
     } else {
         plusList.style.visibility = 'hidden';
@@ -19,9 +19,9 @@ const dropDown = () => {
         plusList.style.bottom = '70px';
         plusBtn.style.borderColor = '#fff';
         plusBtn.style.borderBottomColor = '#fff';
-        plusBtn.style.borderBottomWidth = '2px';
         plusBtn.style.borderRadius = '3px';
-        plusBtn.style.marginTop = '0px';
+        plusBtn.style.borderBottomWidth = '2px';
+        plusBtn.style.paddingBottom = '10px';
         links.style.bottom = '45px';
     }
 }

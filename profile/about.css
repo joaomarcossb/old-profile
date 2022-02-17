@@ -10,47 +10,49 @@
     --color2: #FA9633;
     --color3: #E06D34;
     --color4: #892E33;
-    --titleFont: 'Bebas Neue', sans-serif;
+    --titleFont: 'Bebas Neue', system-ui, sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    background-color: var(--color1);
     background-image: url("https://i.pinimg.com/originals/a1/78/55/a1785592d41e140f00ef1cf3d9597dcb.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: brightness(60%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-section {
-    width: 90vw;
+main {
+    background-color: rgb(0,0,0,0.4);
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.5);
 }
 
 h1 {
     font-family: var(--titleFont);
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     color: #fff;
-    letter-spacing: 10px;
-    margin-bottom: 20px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    margin: 60px 20px 20px 20px;
 }
 
 p {
     font-family: system-ui, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     letter-spacing: .5px;
     color: #fff;
-    margin-bottom: 20px;
     line-height: 1.5rem;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin: 0px 20px 10px 20px;
 }
 
 .teclist-container {
@@ -63,23 +65,9 @@ ul {
     font-family: system-ui, sans-serif;
     color: #fff;
     text-align: left;
-    margin: 0px 40px;
+    margin: 20px 40px 60px 40px;
 }
 
 ul > li {
-    padding-bottom: 5px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    font-weight: 500;
-}
-
-@media (max-width: 400px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    body {
-        padding: 20px 0px;
-    }
+    padding-bottom: 2px;
 }
