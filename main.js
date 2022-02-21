@@ -1,6 +1,7 @@
 const plusList = document.getElementById('plus-list');
 const plusBtn = document.getElementById('plus-btn');
 const links = document.getElementById('link-list');
+const mainDiv = document.getElementById('main-div');
 
 const dropDown = () => {
     if (plusList.style.visibility == 'hidden') {
@@ -12,7 +13,8 @@ const dropDown = () => {
         plusBtn.style.borderRadius = '3px 3px 0px 0px';
         plusBtn.style.borderBottomWidth = '0px';
         plusBtn.style.paddingBottom = '12px';
-        links.style.bottom = '0px';
+        links.style.bottom = '20px';
+        mainDiv.style.padding = '60px 0px 40px 0px';
     } else {
         plusList.style.visibility = 'hidden';
         plusList.style.opacity = 0;
@@ -22,6 +24,7 @@ const dropDown = () => {
         plusBtn.style.borderRadius = '3px';
         plusBtn.style.borderBottomWidth = '2px';
         plusBtn.style.paddingBottom = '10px';
-        links.style.bottom = '45px';
+        links.style.bottom = '60px';
+        mainDiv.style.padding = '60px 0px 10px 0px';
     }
 }

@@ -30,13 +30,15 @@ body {
 }
 
 main {
-    padding: 80px 0px;
+    padding: 60px 0px 10px 0px;
     width: 95%;
-    max-width: 1000px;
+    max-width: 850px;
     text-align: center;
     background-color: rgb(0,0,0,0.3);
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(0,0,0,0.5);
+    transition-property: ease-in-out padding;
+    transition-duration: .3s;
 }
 
 main > span {
@@ -48,11 +50,18 @@ main > span {
 }
 
 h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
     color: #fff;
     font-family: var(--titleFont);
     font-size: 3rem;
-    letter-spacing: 5px;
-    margin: 20px;
+    letter-spacing: 12px;
 }
 
 main > ul {
@@ -120,7 +129,7 @@ main > ul > li {
     border-width: 0px 2px 2px 2px;
     border-radius: 0px 0px 3px 3px;
     transition-property: ease-in-out bottom top;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     padding: 5px 0px;
 }
 
@@ -148,11 +157,11 @@ main > ul > li {
     display: flex;
     justify-content: space-around;
     color: #fff;
-    font-size: 2.5rem;
     position: relative;
-    bottom: 45px;
+    bottom: 60px;
+    font-size: 2.5rem;
     transition-property: ease-in-out bottom top;
-    transition-duration: .4s;
+    transition-duration: .3s;
 }
 
 .link {
@@ -164,15 +173,34 @@ main > ul > li {
     color: var(--color2);
 }
 
-.clipboard {
-    cursor: pointer;
+@media (max-width: 750px) {
+    h1, h2 {
+        font-size: 2.5rem;
+        letter-spacing: 8px;
+    }
+    main > span {
+        font-size: 1.2rem;
+    }
+    main > ul {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 450px) {
-    h1 {
-        font-size: 2.5rem;
+    h1, h2 {
+        font-size: 2rem;
+        letter-spacing: 6px;
     }
     .plus-list > ul > li > a {
         color: #fff;
+    }
+    .icons {
+        font-size: 2rem;
+    }
+    main > span {
+        font-size: 1rem;
+    }
+    main > ul {
+        font-size: 1rem;
     }
 }
